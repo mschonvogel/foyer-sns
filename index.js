@@ -22,6 +22,7 @@ Interface.prototype.sendNotification = function(type, arn, message, url, callbac
 	switch(type) {
 		case 'ios': messageJson = _messageForTypeIos(message, url); break;
 		case 'android': messageJson = _messageForTypeAndroid(message, url); break;
+		default: throw new Error('Wrong or missing Type. Expecting "ios" or "android".');
 	}
 
 	this.sns.publish({
