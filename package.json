@@ -1,0 +1,14 @@
+{
+  "name": "foyer-sns",
+  "version": "1.0.0",
+  "description": "Wrapper for AWS SNS to send Push-Notifications via APNS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Malte Schonvogel <malte@schonvogel.net> (http://schonvogel.net)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk":"*"
+  }
+}
